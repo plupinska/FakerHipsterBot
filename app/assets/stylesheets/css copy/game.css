@@ -1,0 +1,129 @@
+html, body, h1, div {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #121B1F;
+}
+
+.rules {
+  height: 50px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+.game-border {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+}
+
+h1 {
+  color: red;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.wrapper-left {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: auto;
+}
+
+#ai {
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+#human {
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+
+#game {
+  border-top: 1px solid white;
+  align-items: center;
+}
+
+#winner {
+ color: white;
+ height: 30px;
+ padding: 10px;
+ text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  width: 100%;
+  list-style: none;
+  min-height: 50px;
+  margin-top: 30px;
+}
+
+#pl {
+  width: 60px;
+  height: 60px;
+}
+
+.links * {
+  width: 50px;
+  height: 50px;
+}
+
+.links:hover {
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+}
+
+
+
+.scoreboard {
+  text-align: left;
+  border: 5px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  height: 50%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.winner {
+  height: 10px;
+}
