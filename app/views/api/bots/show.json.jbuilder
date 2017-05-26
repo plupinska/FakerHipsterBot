@@ -1,1 +1,2 @@
-json.tweet @tweet.tweet
+
+json.tweet @tweet

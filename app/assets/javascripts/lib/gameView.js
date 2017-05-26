@@ -50,6 +50,7 @@ class GameView {
       }, 10);
     } else {
       this.ctx.clearRect(0,0,500,500);
+      
     }
   }
 }

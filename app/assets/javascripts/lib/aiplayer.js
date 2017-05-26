@@ -5,7 +5,7 @@ class aiPlayer {
 
     this.lives = lives;
     this.score = score;
-    this.dy = 3.65;
+    this.dy = 5.2;
     this.cWidth = 500;
     this.cHeight = 500;
     this.game = game;

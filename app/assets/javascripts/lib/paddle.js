@@ -3,7 +3,7 @@ class Paddle {
     this.pos = options.pos;
     this.width = 5;
     this.height = 55;
-    this.yvel = 4.1;
+    this.yvel = 6;
     this.maxWidth = options.maxWidth;
     this.maxHeight = maxHeight;
     this.name = options.name;

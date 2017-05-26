@@ -58,16 +58,10 @@ class Ball {
     if (this.hitTop()) {
       this.pos[1] = this.radius;
       this.yvel = -1 * this.yvel;
-      let snd = new Audio("audio/bouncelost.wav");
-      snd.play();
     } else if (this.hitBottom()) {
       this.pos[1] = this.pos[1] - this.radius * 2;
       this.yvel = -1 * this.yvel;
-      let snd = new Audio("audio/bouncelost.wav");
-      snd.play();
     } else if (this.haveCollided(paddle1, ballCollisionPts)){
-     let snd = new Audio("audio/bouncelost.wav");
-     snd.play();
      let relativeIntersectY = (paddle1y + (paddle1.height/2)) - this.pos[1];
      let normalizedRelativeIntersectionY = (relativeIntersectY/(paddle1.height/2));
      let bounceAngle = normalizedRelativeIntersectionY * 3*Math.PI/10;
@@ -77,8 +71,6 @@ class Ball {
 
      hitPaddle = true;
   } else if (this.haveCollided(paddle2, ballCollisionPts)){
-    let snd = new Audio("audio/bouncelost.wav");
-    snd.play();
     let relativeIntersectY = (paddle2y + (paddle2.height/2)) - this.pos[1];
     let normalizedRelativeIntersectionY = (relativeIntersectY/(paddle2.height/2));
     let bounceAngle = normalizedRelativeIntersectionY * 3*Math.PI/10;
@@ -89,9 +81,6 @@ class Ball {
     hitPaddle = true;
   } else if (this.hitLeftOrRight()) {
     this.sendTweet().bind(this);
-    debugger
-    let snd = new Audio("audio/bounce.wav");
-    snd.play();
     this.yvel = this.yvel;
     this.xvel = -1 * this.xvel;
     if (this.pos[0] < 0  && !hitPaddle) {
@@ -144,10 +133,10 @@ class Ball {
     }).then((tweet) => {
       console.log(tweet)
        responsiveVoice.speak(`${tweet.tweet}`, "UK English Male");
-       debugger
+  
     });
 
-debugger
+
   }
 
   hitLeftOrRight() {
