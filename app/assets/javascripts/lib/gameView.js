@@ -22,16 +22,15 @@ class GameView {
     this.ctx.strokeStyle = '#ffffff';
     this.ctx.stroke();
     this.game.ball.bounce(this.game.aiPaddle, this.game.humanPaddle);
-    this.makeScoreboard();
     this.game.start();
   }
 
-  makeScoreboard() {
-    let aiScore = document.getElementById('ai');
-    let huScore = document.getElementById('human');
-    aiScore.innerHTML = (`Machine: ${this.game.aiPlayer.score}`);
-    huScore.innerHTML = (`Player: ${this.game.humanPlayer.score}`);
-  }
+  // makeScoreboard() {
+  //   let aiScore = document.getElementById('ai');
+  //   let huScore = document.getElementById('human');
+  //   aiScore.innerHTML = (`Machine: ${this.game.aiPlayer.score}`);
+  //   huScore.innerHTML = (`Player: ${this.game.humanPlayer.score}`);
+  // }
 
   start() {
     this.lastTime = 0;
@@ -50,7 +49,7 @@ class GameView {
       }, 10);
     } else {
       this.ctx.clearRect(0,0,500,500);
-      
+
     }
   }
 }

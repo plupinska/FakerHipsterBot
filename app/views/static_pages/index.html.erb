@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" type="text/css" href="css/game.css">
-     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
      <script src="lib/bundle.js"></script>
      <link rel="icon" href="pong.ico" type="image/x-icon">
     <title>Pong</title>
   </head>
   <body>
-
+    <div class="rules">
+      The Hipster Bot would like to play.... First one to score 5pts wins.
+    </div>
     <div class="game-border">
+
       <div class="wrapper-left">
         <h1>Pong</h1>
         <canvas height='500' width='500' id="game"></canvas>
       </div>
       <div class="wrapper-right">
-        <div class="rules">
-          Patrycja Pong: The first to <br/> <br/>
-          score 5 points first wins!!
-        </div>
 
         <div class="scoreboard">
-          <h1>Score</h1>
-          <div id="ai">Human:</div>
-          <div id="human">Computer:</div>
+          <div id="winner">
+
+          </div>
+          <a id="social-list" height="500" class="twitter-timeline" href="https://twitter.com/faker_hipster">Score</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
         <div class="item2">
@@ -34,10 +34,9 @@
             <p>Use Up or Down arrows to move.</p>
           </div>
 
-          <div id="winner">
-          </div>
         </div>
       </div>
     </div>
+
   </body>
 </html>

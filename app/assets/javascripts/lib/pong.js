@@ -11,16 +11,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.keyCode === 13 && !disable) {
           disable = true;
           document.getElementById("winner").innerHTML = "";
-          document.getElementById("ai").innerHTML = "";
-          document.getElementById("human").innerHTML = "";
+          // document.getElementById("ai").innerHTML = "";
+          // document.getElementById("human").innerHTML = "";
           const game = new Game(width, height, ctx);
           new GameView(game, ctx, width, height).start();
 
       } else if (e.keyCode === 13 && document.getElementById("winner").innerHTML.length > 0) {
         disable = true;
         document.getElementById("winner").innerHTML = "";
-        document.getElementById("ai").innerHTML = "";
-        document.getElementById("human").innerHTML = "";
+        // document.getElementById("ai").innerHTML = "";
+        // document.getElementById("human").innerHTML = "";
         const game = new Game(width, height, ctx);
         new GameView(game, ctx, width, height).start();
       }
