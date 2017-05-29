@@ -2,8 +2,8 @@ class Ball {
   constructor(width, height, game) {
     this.pos = [270,270];
     this.vel = 3;
-    this.xvel = 3;
-    this.yvel = 2;
+    this.xvel = 2.8;
+    this.yvel = 1.8;
     this.radius = 10;
     this.color = "#5A879A";
     this.cwidth = width;
@@ -80,7 +80,7 @@ class Ball {
 
     hitPaddle = true;
   } else if (this.hitLeftOrRight()) {
-    this.sendTweet().bind(this);
+    this.sendTweet();
     this.yvel = this.yvel;
     this.xvel = -1 * this.xvel;
     if (this.pos[0] < 0  && !hitPaddle) {
@@ -133,10 +133,7 @@ class Ball {
     }).then((tweet) => {
       console.log(tweet)
        responsiveVoice.speak(`${tweet.tweet}`, "UK English Male");
-  
     });
-
-
   }
 
   hitLeftOrRight() {
